@@ -16,6 +16,10 @@ export const saveCompany = async (req, res) =>{
     try{
         // Capturar el nombre del curso desde el body
         let data = req.body;
+        const existingCompany = await Company.findOne({ name: data.name });
+        if (existingCompany) {
+            return res.status(400).send({message: `A company with the same name already exists.`});
+        }
         // Crear una nueva instancia de company solo con el nombre
         const company = new Company( data );
         // Guardar la empresa

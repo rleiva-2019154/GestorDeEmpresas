@@ -1,0 +1,284 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GestorDeEmpresas",
+    "dateExported": "2024-03-01T13:32:48.040Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "038f83d3-5c25-453b-9b32-040d4ac2e24f",
+            "colId": "053690ea-68de-4d69-ac64-5ac8ee7a8d8f",
+            "containerId": "",
+            "name": "TestAdmin",
+            "url": "test",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-01T13:06:29.309Z",
+            "modified": "2024-03-01T13:13:26.366Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDQ0NWVmYzU0ZjVmNmY5NzE1NjIiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5Mjk4Nzc1LCJleHAiOjE3MDkzMDk1NzV9.saP02YM-VlFO6OJ-s6WFGjQAGxJxh5i19qXN08Pfrt4"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4b7c3d46-d83c-4f67-86c1-8cc09088e391",
+            "colId": "053690ea-68de-4d69-ac64-5ac8ee7a8d8f",
+            "containerId": "",
+            "name": "Login",
+            "url": "login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-01T13:06:45.237Z",
+            "modified": "2024-03-01T13:12:55.632Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "admin"
+                    },
+                    {
+                        "name": "password",
+                        "value": "useAdmin"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "fef44fcc-19dd-43fc-b3b3-e52ed2ffb21b",
+            "colId": "053690ea-68de-4d69-ac64-5ac8ee7a8d8f",
+            "containerId": "",
+            "name": "testCompany",
+            "url": "testCompany",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-01T13:14:20.634Z",
+            "modified": "2024-03-01T13:17:24.948Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDQ0NWVmYzU0ZjVmNmY5NzE1NjIiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5Mjk4Nzc1LCJleHAiOjE3MDkzMDk1NzV9.saP02YM-VlFO6OJ-s6WFGjQAGxJxh5i19qXN08Pfrt4"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3bef33e3-2724-475e-91d1-79bec24196a8",
+            "colId": "053690ea-68de-4d69-ac64-5ac8ee7a8d8f",
+            "containerId": "",
+            "name": "SaveCompany",
+            "url": "saveCompany",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-03-01T13:14:29.707Z",
+            "modified": "2024-03-01T13:20:53.718Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDQ0NWVmYzU0ZjVmNmY5NzE1NjIiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5Mjk4Nzc1LCJleHAiOjE3MDkzMDk1NzV9.saP02YM-VlFO6OJ-s6WFGjQAGxJxh5i19qXN08Pfrt4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Zara"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Venta de ropa"
+                    },
+                    {
+                        "name": "impactLevel",
+                        "value": "Mundial"
+                    },
+                    {
+                        "name": "yearOfExperience",
+                        "value": "2"
+                    },
+                    {
+                        "name": "businessCategory",
+                        "value": "Moda"
+                    },
+                    {
+                        "name": "CEO",
+                        "value": "Juan"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "518f23e5-9874-46e2-a119-9db352f1a4c3",
+            "colId": "053690ea-68de-4d69-ac64-5ac8ee7a8d8f",
+            "containerId": "",
+            "name": "updateCompany",
+            "url": "updateCompany/65e1d5f5e1067df5ca9b5980",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-03-01T13:14:41.211Z",
+            "modified": "2024-03-01T13:22:18.434Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDQ0NWVmYzU0ZjVmNmY5NzE1NjIiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5Mjk4Nzc1LCJleHAiOjE3MDkzMDk1NzV9.saP02YM-VlFO6OJ-s6WFGjQAGxJxh5i19qXN08Pfrt4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "businessCategory",
+                        "value": "Comida Rapida"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f2204ead-fb30-42f2-939a-ebbccf8318c6",
+            "colId": "053690ea-68de-4d69-ac64-5ac8ee7a8d8f",
+            "containerId": "",
+            "name": "listCompanies",
+            "url": "listCompanies",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-03-01T13:14:54.219Z",
+            "modified": "2024-03-01T13:22:52.173Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDQ0NWVmYzU0ZjVmNmY5NzE1NjIiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5Mjk4Nzc1LCJleHAiOjE3MDkzMDk1NzV9.saP02YM-VlFO6OJ-s6WFGjQAGxJxh5i19qXN08Pfrt4"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7473ce30-2c5b-42ab-bdbb-5ce2629568bf",
+            "colId": "053690ea-68de-4d69-ac64-5ac8ee7a8d8f",
+            "containerId": "",
+            "name": "filterByYears",
+            "url": "filterCompaniesByYears?yearOfExperience=2",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-03-01T13:15:03.603Z",
+            "modified": "2024-03-01T13:24:28.305Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDQ0NWVmYzU0ZjVmNmY5NzE1NjIiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5Mjk4Nzc1LCJleHAiOjE3MDkzMDk1NzV9.saP02YM-VlFO6OJ-s6WFGjQAGxJxh5i19qXN08Pfrt4"
+                }
+            ],
+            "params": [
+                {
+                    "name": "yearOfExperience",
+                    "value": "2",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "b94b82ad-fca3-42a1-b4b7-4f63bfbb9115",
+            "colId": "053690ea-68de-4d69-ac64-5ac8ee7a8d8f",
+            "containerId": "",
+            "name": "filterByCategory",
+            "url": "filterCompaniesByCategory?businessCategory=Comida Rapida",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-03-01T13:15:14.019Z",
+            "modified": "2024-03-01T13:25:27.726Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDQ0NWVmYzU0ZjVmNmY5NzE1NjIiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5Mjk4Nzc1LCJleHAiOjE3MDkzMDk1NzV9.saP02YM-VlFO6OJ-s6WFGjQAGxJxh5i19qXN08Pfrt4"
+                }
+            ],
+            "params": [
+                {
+                    "name": "businessCategory",
+                    "value": "Comida Rapida",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "50b73b11-d415-4f17-9ede-4bf54ae135d7",
+            "colId": "053690ea-68de-4d69-ac64-5ac8ee7a8d8f",
+            "containerId": "",
+            "name": "sortA-Z",
+            "url": "sortCompaniesAZ",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-03-01T13:15:24.659Z",
+            "modified": "2024-03-01T13:26:13.490Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDQ0NWVmYzU0ZjVmNmY5NzE1NjIiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5Mjk4Nzc1LCJleHAiOjE3MDkzMDk1NzV9.saP02YM-VlFO6OJ-s6WFGjQAGxJxh5i19qXN08Pfrt4"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c7ee3761-5c9e-4d7e-825d-64805a370702",
+            "colId": "053690ea-68de-4d69-ac64-5ac8ee7a8d8f",
+            "containerId": "",
+            "name": "sortZ-A",
+            "url": "sortCompaniesZA",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-03-01T13:15:43.651Z",
+            "modified": "2024-03-01T13:26:37.553Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDQ0NWVmYzU0ZjVmNmY5NzE1NjIiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5Mjk4Nzc1LCJleHAiOjE3MDkzMDk1NzV9.saP02YM-VlFO6OJ-s6WFGjQAGxJxh5i19qXN08Pfrt4"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "567205c3-243d-4548-a3b3-f66fda4bf233",
+            "colId": "053690ea-68de-4d69-ac64-5ac8ee7a8d8f",
+            "containerId": "",
+            "name": "ExcelReport",
+            "url": "generateExcelReport",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-03-01T13:15:57.819Z",
+            "modified": "2024-03-01T13:26:54.520Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDQ0NWVmYzU0ZjVmNmY5NzE1NjIiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5Mjk4Nzc1LCJleHAiOjE3MDkzMDk1NzV9.saP02YM-VlFO6OJ-s6WFGjQAGxJxh5i19qXN08Pfrt4"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2656/"
+        }
+    }
+}

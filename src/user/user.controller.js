@@ -12,6 +12,29 @@ export const test =(req, res)=>{
     return res.send({message: 'Test is running'})
 }
 
+export const adminDef = async(req,res) =>{
+    try{
+        const adminExists = await User.findOne({username: 'admin'})
+        if(adminExists){
+            console.log('Ya existe el usuario principal')
+        }else{
+            const encryptPassword =  await encrypt('useAdmin')
+            const nuevoUsuario = new User({
+                name: 'admin',
+                surname: 'admin',
+                username: 'admin',
+                password: encryptPassword,
+                email: 'admin@gmail.com',
+                phone: '21548798',
+                role: 'ADMIN'
+            })
+            await nuevoUsuario.save()
+        }
+    }catch(err){
+        console.error(err)
+    }
+}
+
 export const register = async(req, res) => {
     try{
         //Capturar el formulario (body)
